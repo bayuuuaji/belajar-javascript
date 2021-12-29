@@ -1,10 +1,23 @@
-function tambah() {
-  var hasil = 0;
-  for (var i = 0; i < arguments.length; i++) {
-    hasil += arguments[i];
-  }
-  return hasil;
+// function jumlahVolumeKubus(a, b) {
+//   var volumeA;
+//   var volumeB;
+//   var total;
+
+//   volumeA = a * a * a;
+//   volumeB = b * b * b;
+
+//   total = volumeA + volumeB;
+
+//   return total;
+// }
+
+// alert(jumlahVolumeKubus(8, 3));
+// alert(jumlahVolumeKubus(10, 15));
+
+// SEDERHANAKAN
+
+function volumeDuaKubus(a, b) {
+  return a * a * a + b * b * b;
 }
 
-var coba = tambah(3, 4, 5, 1);
-console.log(coba);
+alert(volumeDuaKubus(8, 3));
